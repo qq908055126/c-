@@ -1,0 +1,26 @@
+
+一、指针计算：
+sizeof(char)=1   sizeof(int)=4
+当指针加一的时候不是在地址值上加一而是加sizeof。
+
+给指针加、减一个整数（+，-，+=，-=）。
+递增递减（++、--）。
+两个指针可以相加减。（不是地址的差，给的是地址差除以sizeof）。
+
+++后缀输出的是值++之前的值。
+
+二、指针作用
+需要传入较大的数据时用作参数。
+传入数组后对数组做操作。
+函数返回不止一个结果。
+需要用函数来修改不止一个变量。
+动态申请的内存。
+
+三、字符串
+strlen（const char *s）；//返回S的字符串长度（不包括结尾的0）
+stecmp（const char *s1，const char *s2）；//比较两个字符串，返回：0--> s1==s2 1--> s1>s2  -1--> s1<s2
+strcpy(char *restrict dst,char *restrict src );//把src的字符串拷贝到dst restrict表示src和dst不重叠（c99）返回dst
+strchr（const char *s，int c）//查找从左边数过来C第一次出现的位置，返回的是指针
+strrchr（const char *s，int c）//查找从右边数过来C第一次出现的位置，返回的是指针
+strstr（const char *s1，const char *s2）//寻找字符中的字符串
+strcasestr（const char *s1，const char *s2）//寻找字符中的字符串（忽略大小写）
