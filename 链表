@@ -1,0 +1,6 @@
+一、Array
+Array array_create(int init_size)//用来创建一个数组
+void array_free(Array *a)//回收数组空间
+int array_size(const Array*a)//告诉数组里有多少个单元可以用
+int * array_at(Array *a,int index);//访问数组当中的某个单元
+void array_inflate(Array *a,int more_size);//让数组长大；
