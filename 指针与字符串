@@ -18,7 +18,7 @@ sizeof(char)=1   sizeof(int)=4
 
 三、字符串
 strlen（const char *s）；//返回S的字符串长度（不包括结尾的0）
-stecmp（const char *s1，const char *s2）；//比较两个字符串，返回：0--> s1==s2 1--> s1>s2  -1--> s1<s2
+strcmp（const char *s1，const char *s2）；//比较两个字符串，返回：0--> s1==s2 1--> s1>s2  -1--> s1<s2
 strcpy(char *restrict dst,char *restrict src );//把src的字符串拷贝到dst restrict表示src和dst不重叠（c99）返回dst
 strchr（const char *s，int c）//查找从左边数过来C第一次出现的位置，返回的是指针
 strrchr（const char *s，int c）//查找从右边数过来C第一次出现的位置，返回的是指针
